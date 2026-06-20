@@ -1,0 +1,53 @@
+body {
+    font-family: Garamond, sans-serif;
+    margin: 20px;
+    background-color: antiquewhite;
+    color: rgb(22, 73, 22);
+}
+/*Main Heading*/
+h1 {
+    color: rgb(153, 13, 13);
+}  
+/*Form Style*/ 
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+    input, 
+    textarea {
+    width: 95%;
+    padding: 10px;
+}
+button {
+    background-color: rgb(153, 13, 13);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}  
+/* Changes button color when mouse hovers over it */ 
+button:hover {
+    background-color: rgb(120, 10, 10);
+}
+
+#char-count {
+   font-weight: bold;
+}
+
+#form-response {
+    color: rgb(153, 13, 13);
+    font-weight: bold;
+}
+#tooltip {
+    color: lightyellow;
+    font-style: italic;
+}
+/*Feedback Display Style*/
+#feedback-display {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid rgb(153, 13, 13);
+    border-radius: 5px;
+    background-color: white;
+}

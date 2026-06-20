@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Guest Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<h1>Thanks for staying with Rosebud Motels!</h1>
     
+    <p>We hope you had a pleasant stay. Please take a moment to provide your feedback by filling out the form below:</p>
+        
+    <form id="feedback-form">
+            <label for="guestName">Name:</label><br>
+            <input type="text" id="guestName" name="guestName" required><br><br>
+
+            <label for="guestEmail">Email:</label><br>
+            <input type="email" id="guestEmail" name="guestEmail" required><br><br>
+
+            <label for="feedbackRating">Feedback Rating (1-5):</label><br>
+            <input type="number" id="feedbackRating" name="feedbackRating" min="1" max="5" required><br><br>
+
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50" required></textarea><br><br>
+
+            <p id="char-count">Characters: 0</p>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    
+    <p id="form-response"></p>
+    <p id="tooltip"></p>
+
+<h2>Submitted Feedback</h2>
+<div id="feedback-display"></div>
+
+<script src="cp_1.js"></script>
+
 </body>
 </html>
