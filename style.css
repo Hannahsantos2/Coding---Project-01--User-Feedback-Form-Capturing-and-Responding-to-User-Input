@@ -40,8 +40,9 @@ button:hover {
     font-weight: bold;
 }
 #tooltip {
-    color: lightyellow;
-    font-style: italic;
+    color: rgb(153, 13, 13);
+    font-weight: bold;
+    min-height: 20px;
 }
 /*Feedback Display Style*/
 #feedback-display {

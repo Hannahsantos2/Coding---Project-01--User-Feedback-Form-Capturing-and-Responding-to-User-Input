@@ -18,4 +18,43 @@ form.addEventListener("input", function(event) {
     }
 });
 
+// Starting message for the tooltip area
+tooltip.textContent = "Hover over a field for help.";
 
+// Shows a helpful message when the mouse moves over a field
+form.addEventListener("mouseover", function(event) {
+    if (event.target.id === "guestName") {
+        tooltip.textContent = "Please enter your name.";
+    }
+
+    if (event.target.id === "guestEmail") {
+        tooltip.textContent = "Please enter your email.";
+    }
+
+    if (event.target.id === "feedbackRating") {
+        tooltip.textContent = "Rate your stay from 1 to 5.";
+    }
+
+    if (event.target.id === "comments") {
+        tooltip.textContent = "Please write your feedback.";
+    }
+});
+
+// Resets the tooltip when the mouse leaves a field
+form.addEventListener("mouseout", function(event) {
+    if (event.target.id === "guestName") {
+        tooltip.textContent = "Hover over a field for help.";
+    }
+
+    if (event.target.id === "guestEmail") {
+        tooltip.textContent = "Hover over a field for help.";
+    }
+
+    if (event.target.id === "feedbackRating") {
+        tooltip.textContent = "Hover over a field for help.";
+    }
+
+    if (event.target.id === "comments") {
+        tooltip.textContent = "Hover over a field for help.";
+    }
+});
